@@ -29,7 +29,6 @@ ul {
   gap: 30px;
   grid-auto-rows: 370px;
   font-family: Roboto, sans-serif;
-  font-size: 20px;
 
   @media (max-width: 1199px) {
     grid-template-columns: repeat(2, 370px);
@@ -94,7 +93,7 @@ ul {
         opacity: 0.5;
       }
 
-      &:last-of-type {
+      &.download {
         margin-left: auto;
         background-image: url(images/download.svg);
       }
@@ -133,6 +132,16 @@ ul {
 
     span {
       z-index: 1;
+      font-size: 20px;
+
+      &.autor {
+        font-weight: 500;
+      }
+
+      &.date {
+        color: #e0e0e0;
+        font-weight: 400;
+      }
     }
   }
 }
